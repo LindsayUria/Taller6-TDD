@@ -39,6 +39,9 @@ public class Persona {
                 setDestino(num2);
                 flg=2;
             }
+            //System.out.println("Persona esta en el piso: "+num2);
         }
+
     }
+
 }

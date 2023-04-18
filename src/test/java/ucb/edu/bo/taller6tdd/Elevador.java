@@ -39,6 +39,11 @@ public class Elevador {
         if(piso!=per.getPiso()){
             throw new Exception("El piso del ascensor "+piso + " no es el mismo de la persona "+per.getPiso());
         }
+        puerta=false;
+        ocupado=true;
+        System.out.println("Asensor ocupado en piso: "+piso);
+        piso= per.getDestino();
+        System.out.println("Asensor desocupado en piso: "+piso);
         return piso;
     }
 }

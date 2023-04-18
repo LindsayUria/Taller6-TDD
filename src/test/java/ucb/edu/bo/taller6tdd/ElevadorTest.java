@@ -78,8 +78,32 @@ public class ElevadorTest {
         persona.crearPersona();
         //2 logica de la prueba
         elevador.llamar(persona);
-        //3 Verificacion de la preba
+        //3 Verificacion de la prueba
         assertEquals(persona.getDestino(), elevador.destino(persona));
+    }
+
+    //Si la primera persona del día aparece en el piso 1, puede subirse de
+    //inmediato al ascensor (después de presionar el botón de llamada).
+    // Si la primera persona aparece en el piso 2, el elevador deberá dirigirse
+    // al piso 2 y recoger a la persona. El ascensor siempre sabe en que piso esta
+    // y cual es su piso de destino
+    @Test
+    public void variasPersonasPidenAscensor() throws Exception {
+        //1 preparacion de la prueba
+        Persona persona=new Persona();
+        persona.crearPersona();
+        //2 logica de la prueba
+        elevador.llamar(persona);
+        //3 Verificacion de la prueba
+        assertEquals(persona.getDestino(), elevador.destino(persona));
+        Persona persona2=new Persona();
+        persona2.crearPersona();
+        elevador.llamar(persona2);
+        assertEquals(persona2.getDestino(), elevador.destino(persona2));
+        Persona persona3=new Persona();
+        persona3.crearPersona();
+        elevador.llamar(persona3);
+        assertEquals(persona3.getDestino(), elevador.destino(persona3));
     }
 
 }
