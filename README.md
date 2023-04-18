@@ -9,7 +9,7 @@ Si la primera persona del día aparece en el piso 1, puede subirse de inmediato 
 
 REQUISITOS
 
-Spring versión 3.0.5
+Spring versión 3.0.5,
 JDK 17 o superior.
 
 
