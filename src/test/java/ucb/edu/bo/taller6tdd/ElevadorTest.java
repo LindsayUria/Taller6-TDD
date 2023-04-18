@@ -58,4 +58,15 @@ public class ElevadorTest {
         assertEquals(persona.getPiso(), elevador.llamar(persona));
     }
 
+    //El piso de destino de la persona nunca es igual al piso en el que se crea esa persona.
+    @Test
+    public void pisoDestinoPersonaNoIgual() throws Exception {
+        //1 preparacion de la prueba
+        Persona persona=new Persona();
+        persona.crearPersona();
+        //2 logica de la prueba
+
+        //3 Verificacion de la prueba
+        assertNotEquals(persona.getPiso(),persona.getDestino());
+    }
 }

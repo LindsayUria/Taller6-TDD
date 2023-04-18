@@ -34,4 +34,11 @@ public class Elevador {
             return 3;
         }
     }
+
+    public int destino(Persona per) throws Exception {
+        if(piso!=per.getPiso()){
+            throw new Exception("el piso del asensor "+piso + " no es el mismo de la persona "+per.getPiso());
+        }
+        return piso;
+    }
 }
