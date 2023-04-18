@@ -69,4 +69,17 @@ public class ElevadorTest {
         //3 Verificacion de la prueba
         assertNotEquals(persona.getPiso(),persona.getDestino());
     }
+
+    //Llega el Ascensor
+    @Test
+    public void pisoDestinoPersonaLLegando() throws Exception {
+        //1 preparacion de la prueba
+        Persona persona=new Persona();
+        persona.crearPersona();
+        //2 logica de la prueba
+        elevador.llamar(persona);
+        //3 Verificacion de la preba
+        assertEquals(persona.getDestino(), elevador.destino(persona));
+    }
+
 }

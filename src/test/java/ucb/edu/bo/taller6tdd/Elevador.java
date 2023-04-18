@@ -37,7 +37,7 @@ public class Elevador {
 
     public int destino(Persona per) throws Exception {
         if(piso!=per.getPiso()){
-            throw new Exception("el piso del asensor "+piso + " no es el mismo de la persona "+per.getPiso());
+            throw new Exception("El piso del ascensor "+piso + " no es el mismo de la persona "+per.getPiso());
         }
         return piso;
     }
