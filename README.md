@@ -1,6 +1,6 @@
 # Taller6-TDD
 
-PROBLEMA A RESUELTO CON TDD
+PROBLEMA RESUELTO CON TDD
 
 Una Compañía pretende construir un edificio de tres pisos, la compañía desea que usted cree un programa para controlar el ascensor del edificio.
 El ascensor tendrá capacidad solo para una persona ya que esta diseñado para ahorrar energía, así que solo se moverá cuando sea necesario. El ascensor al comenzar el día espera con su puerta cerrada en el primer piso del edificio, desde luego, el ascensor alterna direcciones: Primero sube y después baja.
