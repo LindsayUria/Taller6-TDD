@@ -46,4 +46,16 @@ public class ElevadorTest {
         }
     }
 
+    //La persona deberá oprimir el botón de llamada del piso.
+    @Test
+    public void llamadaDePiso() throws Exception {
+        //1 preparacion de la prueba
+        Persona persona=new Persona();
+        persona.crearPersona();
+        //2 logica de la prueba
+
+        //3 Verificacion de la prueba
+        assertEquals(persona.getPiso(), elevador.llamar(persona));
+    }
+
 }
